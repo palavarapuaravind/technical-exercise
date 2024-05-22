@@ -6,10 +6,15 @@ This project demonstrates the automated deployment of a web-accessible Hello Wor
 The project structure comprises the following key components:
 
 main.tf: Terraform configuration file defining the infrastructure resources.
+
 variables.tf: Terraform variables file defining input parameters for customization.
+
 app.py: Python script containing the logic for the Hello World application.
+
 Dockerfile: Dockerfile for constructing the container image of the Hello World application.
+
 .gitignore: Git ignore file to exclude non-essential files from version control.
+
 Getting Started
 # Prerequisites:
 
