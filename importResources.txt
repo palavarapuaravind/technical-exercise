@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Resource Group
+terraform import azurerm_resource_group.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01
+
+# Virtual Network
+terraform import azurerm_virtual_network.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Network/virtualNetworks/example-vnet
+
+# Subnet
+terraform import azurerm_subnet.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Network/virtualNetworks/example-vnet/subnets/example-subnet
+
+# Public IP Address
+terraform import azurerm_public_ip.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Network/publicIPAddresses/publicip
+
+# Network Interface
+terraform import azurerm_network_interface.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Network/networkInterfaces/nic
+
+# Virtual Machine
+terraform import azurerm_virtual_machine.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Compute/virtualMachines/vm
+
+# sql server
+terraform import azurerm_mssql_server.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Sql/servers/my-sql-server01
+
+# Kubernetes cluster
+terraform import azurerm_kubernetes_cluster.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.ContainerService/managedClusters/myakscluster
+
+# sql database
+terraform import azurerm_mssql_database.example /subscriptions/8fd5c15c-b132-4f01-af72-ff9591bddc4f/resourceGroups/MyResourceGroup01/providers/Microsoft.Sql/servers/my-sql-server01/databases/mydatabase
+
+
+
+
