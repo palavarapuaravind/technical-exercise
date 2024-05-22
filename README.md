@@ -36,6 +36,7 @@ Access the Hello World application by navigating to the provided URL in a web br
 Clean-Up:
 
 To deprovision all deployed resources, execute terraform destroy after testing.
-#Additional Notes
+
+# Additional Notes
 Ensure accurate configuration of environment variables for database connectivity within app.py.
 Tailor the Dockerfile and application code to meet specific project requirements and standards.
